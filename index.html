@@ -1,11 +1,12 @@
 <html>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <head>
-    <link rel="stylesheet" href="/index.css" integrity="sha384-7GZOiJ7WwbJ2PKz3iZ2Vt/NHNz65guUjQZ/uo6o2LYkbO/Al8pImelhUBJCReJw+"/>
+    <link rel="stylesheet" href="/annoto.github.io/index.css" integrity="sha384-7GZOiJ7WwbJ2PKz3iZ2Vt/NHNz65guUjQZ/uo6o2LYkbO/Al8pImelhUBJCReJw+"/>
     
 <script type="module">
-import init, * as bindings from '/annoto.js';
-const wasm = await init({ module_or_path: '/annoto_bg.wasm' });
+import init, * as bindings from '/annoto.github.io/annoto.js';
+const wasm = await init({ module_or_path: '/annoto.github.io/annoto_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -101,7 +102,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
             }
         }
     </style>
-  <link rel="modulepreload" href="/annoto.js" crossorigin="anonymous" integrity="sha384-TnEU55SQXtiiSToCOczxfKKTUJUlrWqcDsu24AHqgXkQf3bNmtSaDgVUV1triwjL"><link rel="preload" href="/annoto_bg.wasm" crossorigin="anonymous" integrity="sha384-bx8N30esaFcO5dRirs/lEL1qMAO2qrFdt+t8vjYaWIb+568fuyZIS2erZCOW4Hhn" as="fetch" type="application/wasm"></head>
+  <link rel="modulepreload" href="/annoto.github.io/annoto.js" crossorigin="anonymous" integrity="sha384-sU3116/D5ILaNoz6leLYVzpbkTgcHT8+bsSk6egL8T+sBgdU7OoYT5TWA+hHyLZO"><link rel="preload" href="/annoto.github.io/annoto_bg.wasm" crossorigin="anonymous" integrity="sha384-W2cBN7aDdq79wXhD324V67l1kLCdicyfzKj5JSiCiDn28g1abVfiK/n2lDnUvx5l" as="fetch" type="application/wasm"></head>
 
   <body>
     <canvas id="the_canvas_id"></canvas>
